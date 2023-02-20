@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./icon-star.svg">
+</head>
+
+<body>
+    <main>
+
+
+        <div class="card">
+
+
+            <div class="evaluation">
+
+
+                <span><img src="./icon-star.svg" alt="star" class="circle-star"></span>
+                <h1 class="heading">How did we do?</h1>
+
+                <p class="paragraph"> Please let us know how we did with your support
+                    request. All feedback is appreciated to help us improve our offering!
+                </p>
+
+                <div class="numbers">
+
+                    <div class="circle">
+                        <input type="radio" id="1" name="1" value="1">
+                        <label for="1">1</label>
+                    </div>
+
+                    <div class="circle">
+                        <input type="radio" id="2" name="2" value="2">
+                        <label for="2">2</label>
+                    </div>
+
+                    <div class="circle">
+                        <input type="radio" id="3" name="3" value="3">
+                        <label for="3">3</label>
+                    </div>
+
+                    <div class="circle">
+                        <input type="radio" id="4" name="4" value="4">
+                        <label for="4">4</label>
+                    </div>
+
+                    <div class="circle">
+                        <input type="radio" id="5" name="5" value="5">
+                        <label for="5">5</label>
+                    </div>
+                </div>
+                <button type="submit" id="btn">Submit</button>
+
+            </div>
+
+            <div class="thankyou">
+
+                <img src="./illustration-thank-you.svg" alt="thank you">
+
+                <div>
+                    <span class="rating">You selected <span id="rating"></span> out of
+                        5</span>
+                </div>
+
+
+                <h1 class="heading">Thank you!</h1>
+                <p class="paragraph">We appreciate you taking the time
+                    to give a rating. If you ever need more support, don’t hesitate to get
+                    in touch!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
